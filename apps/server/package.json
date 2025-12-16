@@ -1,0 +1,21 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": " tsc-watch --onSuccess \"node ./dist/index.js\"",
+        "start": "node ./dist/index.js",
+        "build": "tsc -p ."
+    },
+    "devDependencies": {
+        "@types/node": "^25.0.2",
+        "tsc-watch": "^7.2.0",
+        "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "http": "^0.0.1-security",
+        "ioredis": "^5.8.2",
+        "socket.io": "^4.8.1"
+    }
+}
